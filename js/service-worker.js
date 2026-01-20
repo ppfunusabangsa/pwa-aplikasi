@@ -1,4 +1,4 @@
-const CACHE_NAME = "pesantren-cache-v4";
+const CACHE_NAME = "pesantren-cache-v5";
 const urlsToCache = [
   "/",
   "/index.html",
@@ -22,4 +22,5 @@ self.addEventListener("fetch", event => {
   );
 
 });
+
 
