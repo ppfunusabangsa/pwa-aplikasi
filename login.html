@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Santri</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Pondok Pesantren Al-Ikhlas</h2>
+  <p>Login Santri</p>
+</div>
+
+<div class="card">
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Masuk</button>
+</div>
+
+<div class="footer">
+  © 2026 Pondok Pesantren Al-Ikhlas
+</div>
+
+<script>
+function login() {
+  const u = document.getElementById("username").value;
+  const p = document.getElementById("password").value;
+
+  if (u === "santri" && p === "1234") {
+    localStorage.setItem("login", "true");
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Username atau password salah");
+  }
+}
+</script>
+
+</body>
+</html>

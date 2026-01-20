@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pondok Pesantren Al-Ikhlas</title>
+
+  <link rel="manifest" href="js/manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#0a7c3e">
+</head>
+<body>
+
+  <header>
+    <h1>Pondok Pesantren Al-Ikhlas</h1>
+    <p>Berilmu • Berakhlak • Mandiri</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('beranda')">Beranda</button>
+    <button onclick="showSection('profil')">Profil</button>
+    <button onclick="showSection('pengumuman')">Pengumuman</button>
+    <button onclick="showSection('kontak')">Kontak</button>
+  </nav>
+
+  <main>
+    <section id="beranda" class="active">
+      <h2>Selamat Datang</h2>
+      <p>Website resmi Pondok Pesantren Al-Ikhlas.</p>
+    </section>
+
+    <section id="profil">
+      <h2>Profil Pesantren</h2>
+      <p>
+        Pondok Pesantren Al-Ikhlas adalah lembaga pendidikan Islam
+        yang berfokus pada pembinaan akhlak dan ilmu agama.
+      </p>
+    </section>
+
+    <section id="pengumuman">
+      <h2>Pengumuman</h2>
+      <ul>
+        <li>Penerimaan santri baru dibuka</li>
+        <li>Kegiatan Maulid Nabi hari Jumat</li>
+      </ul>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>📍 Alamat: Jl. Pesantren No. 1</p>
+      <p>📞 Telp: 0812-3456-7890</p>
+      <p>📧 Email: pesantren@alikhlas.id</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Pondok Pesantren Al-Ikhlas</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
